@@ -1,94 +1,318 @@
-<!DOCTYPE html>\n<html lang="en">\n
-
-<head>\n
-    <meta charset="UTF-8">\n
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n <title>Undiscovered World</title>\n
-    <link rel="stylesheet" href="styles.css">\n
-</head>\n
-
-<body>\n <header>\n <div class="hero">\n <h1>Welcome to the Undiscovered World</h1>\n <p>Your journey begins here.</p>\n
-            <a href="#about" class="cta">Learn More</a>\n </div>\n </header>\n\n <section id="about">\n <h2>About Us
-        </h2>\n <p>We are dedicated to exploring the unknown and bringing the beauty of the undiscovered to everyone.
-        </p>\n </section>\n\n <section id="portfolio">\n <h2>Our Portfolio</h2>\n <div class="portfolio-items">\n <div
-                class="portfolio-item">\n <h3>Project 1</h3>\n <p>Description of project 1.</p>\n </div>\n <div
-                class="portfolio-item">\n <h3>Project 2</h3>\n <p>Description of project 2.</p>\n </div>\n <div
-                class="portfolio-item">\n <h3>Project 3</h3>\n <p>Description of project 3.</p>\n </div>\n </div>\n
-    </section>\n\n <section id="skills">\n <h2>Our Skills</h2>\n <ul>\n <li>Exploration</li>\n <li>Research</li>\n <li>
-                Photography</li>\n <li>Content Creation</li>\n </ul>\n </section>\n\n <section id="contact">\n <h2>
-            Contact Us</h2>\n <form>\n <label for="name">Name</label>\n <input type="text" id="name" name="name"
-                required>\n <label for="email">Email</label>\n <input type="email" id="email" name="email" required>\n
-            <label for="message">Message</label>\n <textarea id="message" name="message" required></textarea>\n <button
-                type="submit">Send Message</button>\n </form>\n </section>\n\n <footer>\n <p>&copy; 2026 Undiscovered
-            World. All rights reserved.</p>\n </footer>\n</body>\n
-
-</html>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta name="description"
+        content="Global Hub: Explore tourism, culture, language learning, cooking, ticket & visa services, and online shopping in one platform.">
+    <meta name="keywords"
+        content="Tourism, Culture, Language, Cooking, Tickets, Visa, Online Shopping, Travel, Recipes, Learning">
+    <meta name="author" content="Global Hub">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Professional Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
-<body>
-    <!-- Header -->
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Global Hub – Explore, Learn, Shop">
+    <meta property="og:description"
+        content="Discover tourism destinations, cultural experiences, language lessons, cooking tutorials, tickets, visas, and shop online.">
+    <meta property="og:image" content="images/hero-bg1.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Global Hub – Explore, Learn, Shop">
+    <meta name="twitter:description"
+        content="Discover tourism destinations, cultural experiences, language lessons, cooking tutorials, tickets, visas, and shop online.">
+    <meta name="twitter:image" content="images/hero-bg1.jpg">
     <header>
+        <div class="logo">Global Hub</div>
+
+        <!-- Hamburger menu icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#tourism">Tourism</a></li><img src="images/tourism1.jpg" alt="Beach D
+                <section id=" tourism">
+                <h2 class="section-title">Tourism Destinations</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev">&#10094;</button>
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="images/tourism1.jpg" alt="Beach Destination">
+                            <div class="card-content">
+                                <h3>Sunny Beaches</h3>
+                                <p>Discover the most beautiful beaches around the world for your next getaway.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/tourism2.jpg" alt="Mountain Destination">
+                            <div class="card-content">
+                                <h3>Mountain Adventures</h3>
+                                <p>Explore scenic mountain trails and adventure sports destinations.</p>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                    </div>
+                    <button class="carousel-btn next">&#10095;</button>
+                </div>
+                </section>
+                <li><a href="#culture">Culture</a></li>
+                <section id="tourism">
+                    <h2 class="section-title">Tourism Destinations</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="images/tourism1.jpg" alt="Beach Destination">
+                                <div class="card-content">
+                                    <h3>Sunny Beaches</h3>
+                                    <p>Discover the most beautiful beaches around the world for your next getaway.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/tourism2.jpg" alt="Mountain Destination">
+                                <div class="card-content">
+                                    <h3>Mountain Adventures</h3>
+                                    <p>Explore scenic mountain trails and adventure sports destinations.</p>
+                                </div>
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                </section>
+                <li><a href="#language">Language</a></li>
+                <section id="language">
+                    <h2 class="section-title">Language Learning</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="images/language1.jpg" alt="Language Course">
+                                <div class="card-content">
+                                    <h3>Interactive Courses</h3>
+                                    <p>Learn new languages with interactive lessons and real-world examples.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/language2.jpg" alt="Language Apps">
+                                <div class="card-content">
+                                    <h3>Mobile Apps</h3>
+                                    <p>Practice languages on the go with trusted language learning applications.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                </section>
+                <li><a href="#cooking">Cooking</a></li>
+                <section id="cooking">
+                    <h2 class="section-title">Cooking & Recipes</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="images/cooking1.jpg" alt="Traditional Recipes">
+                                <div class="card-content">
+                                    <h3>Traditional Recipes</h3>
+                                    <p>Explore authentic recipes from different cultures and cuisines.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/cooking2.jpg" alt="Cooking Tutorials">
+                                <div class="card-content">
+                                    <h3>Video Tutorials</h3>
+                                    <p>Step-by-step video guides to help you cook like a professional chef.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next">&#10095;</button>
+                    </div>
+                </section>
+                <li><a href="#tickets">Tickets & Visa</a></li>
+                <div class="ticket-visa">
+                    <a href="#" data-tooltip="Book flights to anywhere in the world">Book Flights</a>
+                    <a href="#" data-tooltip="Apply for your travel visa online">Apply Visa</a>
+                    <a href="#" data-tooltip="Purchase travel insurance for safety">Travel Insurance</a>
+                </div>
+                <li><a href="#shop">Shop</a></li>
+                <div class="shop-item" data-tooltip="Beautiful souvenirs from around the world">
+                    <img src="images/shop1.jpg" alt="Souvenir Product">
+                    <h4>Souvenir Collections</h4>
+                </div>
             </ul>
         </nav>
     </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undiscovered World | Tourism, Culture, Travel & Marketplace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<meta name="robots" content="index, follow">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
-    <!-- Main Content -->
-    <main>
-        <section id="home">
-            <h1>Welcome to My Professional Website</h1>
-            <p>This is a simple, multipurpose website built for your needs!</p>
-        </section>
+<body>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am a professional in [Your Field]. This website showcases my skills and services.</p>
-        </section>
-
-        <section id="services">
-            <h2>My Services</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>Consulting</li>
-                <li>Content Creation</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Undiscovered World</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tourism.html">Tourism</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="language.html">Language</a></li>
+                    <li><a href="cooking.html">Cuisine</a></li>
+                    <li><a href="visa.html">Visa & Tickets</a></li>
+                    <li><a href="shop.html">Marketplace</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <a href="mailto:info@globalhub.com">info@globalhub.com</a>
+            <a href="#">+123 456 7890</a>
+        </div>
+        <div>
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <h4>Subscribe</h4>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
             </form>
-        </section>
-    </main>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Connecting Travel, Culture & Commerce</h2>
+            <p>
+                Explore authentic tourism, experience cultural heritage, learn language,
+                master traditional cuisine, access visa support, and connect producers
+                directly to global consumers.
+            </p>
+            <a href="tourism.html" class="btn-primary">Start Your Journey</a>
+        </div>
+    </section>
+
+    <!-- Core Services -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Core Areas</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <h3>Tourism & Destinations</h3>
+                    <p>Responsible, heritage-based tourism experiences tailored to local communities.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Cultural Heritage</h3>
+                    <p>Traditions, festivals, history, identity preservation and community narratives.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Language Education</h3>
+                    <p>Swahili language basics, cultural expressions, and communication guides.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Traditional Cuisine</h3>
+                    <p>Authentic cooking techniques, recipes, culinary history and food culture.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Visa & Ticket Support</h3>
+                    <p>Guidance for visa processes, flight assistance and travel logistics support.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Marketplace</h3>
+                    <p>Connecting local producers directly with consumers through ethical trade.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketplace Preview Section -->
+    <section class="marketplace-preview">
+        <div class="container">
+            <h2>Producer–Consumer Marketplace</h2>
+            <p>
+                Supporting sustainable trade by linking farmers, artisans and local producers
+                to international buyers through a transparent platform.
+            </p>
+            <a href="shop.html" class="btn-secondary">Visit Marketplace</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why">
+        <div class="container">
+            <h2 class="section-title">Why Undiscovered World?</h2>
+
+            <div class="grid">
+
+                <div>
+                    <h4>Authenticity</h4>
+                    <p>Rooted in real community engagement and cultural integrity.</p>
+                </div>
+
+                <div>
+                    <h4>Sustainability</h4>
+                    <p>Promoting responsible tourism and environmental awareness.</p>
+                </div>
+
+                <div>
+                    <h4>Professional Guidance</h4>
+                    <p>Structured travel support and reliable process assistance.</p>
+                </div>
+
+                <div>
+                    <h4>Economic Empowerment</h4>
+                    <p>Encouraging ethical global market access for local producers.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Discover the World Differently</h2>
+            <p>Experience culture, travel responsibly, and connect beyond borders.</p>
+            <a href="contact.html" class="btn-primary">Contact Us</a>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© 2026 My Website</p>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Undiscovered World. All rights reserved.</p>
+            <p>Email: info@undiscoveredworld.com</p>
+        </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
