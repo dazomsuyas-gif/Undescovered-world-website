@@ -51,6 +51,7 @@
                     <li><a href="#poultry">Poultry & Livestock</a></li>
                     <li><a href="#tickets">Visa & Tickets</a></li>
                     <li><a href="#shop">Marketplace</a></li>
+                    <li><a href="#stories">Stories</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -382,6 +383,86 @@
             <a href="#shop" class="btn-secondary">Visit Marketplace</a>
         </div>
     </section>
+
+    <!-- Community Stories & Chat Section -->
+    <section id="stories" class="stories-section">
+        <div class="container">
+            <h2 class="section-title">📖 Community Stories & Ideas</h2>
+            <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem; color: #666;">
+                Share your life stories, travel experiences, cultural insights, and ideas with our global community.
+                Connect, inspire, and learn from each other!
+            </p>
+
+            <!-- Share Story Form -->
+            <div class="share-story-form">
+                <h3>Share Your Story</h3>
+                <form id="storyForm">
+                    <div class="form-group">
+                        <input type="text" id="storyName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="storyEmail" placeholder="Your Email (optional)">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="storyTitle" placeholder="Story Title (e.g., My Journey to Africa)"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="storyContent" placeholder="Share your story, ideas, or experiences here..."
+                            rows="6" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="url" id="storyImage"
+                            placeholder="Image URL (e.g., https://images.unsplash.com/...)">
+                    </div>
+                    <button type="submit" class="btn-primary">Post Story</button>
+                </form>
+            </div>
+
+            <!-- Display Stories -->
+            <div class="stories-container" id="storiesContainer">
+                <!-- Stories will be loaded here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Stories Data Loader -->
+    <script>
+        // Load sample stories on first visit
+        if (!localStorage.getItem('stories')) {
+            const sampleStories = [
+                {
+                    name: "Amara Johnson",
+                    title: "My First Safari in Tanzania",
+                    content: "I had the most incredible experience visiting Mount Kilimanjaro and the Serengeti. The wildlife, the people, and the landscapes took my breath away. I learned so much about African culture and made lifelong friends here.",
+                    image: "https://images.unsplash.com/photo-1501706362039-c06b2d435385?w=500&h=400&fit=crop",
+                    date: "March 28, 2026"
+                },
+                {
+                    name: "Kofi Mensah",
+                    title: "Traditional Cooking Changed My Life",
+                    content: "Learning to cook traditional West African dishes from local chefs was transformative. The recipes passed down through generations carry stories of resilience and culture. I now teach these recipes to my own community.",
+                    image: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=400&fit=crop",
+                    date: "March 25, 2026"
+                },
+                {
+                    name: "Dr. Maria Santos",
+                    title: "Language Learning Success Story",
+                    content: "I started learning Swahili three months ago. It opened doors to connect with people on a deeper level. Now I can have meaningful conversations with locals and understand their rich cultural heritage.",
+                    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop",
+                    date: "March 20, 2026"
+                },
+                {
+                    name: "Hassan Ali",
+                    title: "Supporting Local Poultry Farmers",
+                    content: "I started my poultry farming business with guidance from experts. It's been rewarding to produce high-quality eggs and meat while building sustainable practices. The community support has been amazing!",
+                    image: "https://images.unsplash.com/photo-1587854692152-cbe660dbde0e?w=500&h=400&fit=crop",
+                    date: "March 15, 2026"
+                }
+            ];
+            localStorage.setItem('stories', JSON.stringify(sampleStories));
+        }
+    </script>
 
     <!-- Why Choose Us -->
     <section class="why" id="about">
